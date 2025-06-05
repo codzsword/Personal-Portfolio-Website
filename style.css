@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap');
+
+/*======= Universal CSS Properties =======*/
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*======== Using Css Custom Variables =========*/
+
+body.dark {
+    --bg-color1: #131313;
+    --bg-color2: #27272e;
+    --color1: #fff;
+    --border-color: hsl(0 0% 20%);
+    --drop-shadow1: rgba(17, 32, 114, 0.6);
+}
+
+body:not(.dark) {
+    --bg-color1: #ECF3F9;
+    --bg-color2: #fff;
+    --color1: #303030;
+    --border-color: hsl(0 0% 80%);
+    --drop-shadow1: rgba(17, 32, 114, 0.6);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--color1);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    text-transform: capitalize;
+    color: var(--color1);
+    font-weight: 500;
+}
+
+h3 {
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--color1);
+    font-size: 2.25rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+h3>span {
+    color: #4119f4;
+}
+
+h3~p {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 3rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+    color: var(--color1);
+    font-weight: 600;
+}
+
+h5 {
+    color: #FFF;
+    font-size: 1.025rem;
+    font-weight: 800;
+}
+
+p {
+    color: var(--color1);
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+body {
+    font-family: "Sora", sans-serif;
+    background-color: var(--bg-color1);
+}
+
+/* ========== Dark And Light Mode Toggle ======== */
+
+.theme-toggle {
+    border: none;
+    background-color: transparent;
+}
+
+.theme-toggle .bx-moon,
+.theme-toggle .bx-sun {
+    cursor: pointer;
+    color: #9f9e99;
+    padding: 10px 10px;
+    display: block;
+    font-size: 1.25rem;
+    transition: all 0.4s;
+}
+
+body:not(.dark) .theme-toggle .bx-sun {
+    display: none;
+}
+
+body.dark .theme-toggle .bx-moon {
+    display: none;
+}
+
+/*========== Heading Tag Hover Effect =========*/
+
+.text-wrap {
+    position: relative;
+    display: inline-flex;
+    overflow: hidden;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.main-title {
+    -webkit-text-stroke: 1px var(--color1);
+    -webkit-text-fill-color: transparent;
+}
+
+.main-title,
+.hover-title {
+    transition: .5s cubic-bezier(0.51, 0.57, 0.17, 1);
+    font-family: "Poppins", sans-serif;
+}
+
+.hover-title {
+    color: var(--color1);
+    position: absolute;
+    transform: translate3d(0, 100%, 0);
+}
+
+.text-wrap:hover .main-title {
+    transform: translate3d(0, -100%, 0);
+    transition-delay: 0.1s;
+}
+
+.text-wrap:hover .hover-title {
+    transform: translate3d(0, 0, 0);
+}
