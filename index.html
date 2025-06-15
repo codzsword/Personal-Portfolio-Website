@@ -5,12 +5,309 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Killer Personal Portfolio Website</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <nav>
+        <div class="portfolio-container">
+            <div class="portfolio-row header-wrap">
+                <a href="#" class="logo">Johnson</a>
+                <button class="theme-toggle" type="button" onclick="themeToggle();">
+                    <i class='bx bx-sun'></i>
+                    <i class='bx bx-moon'></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="portfolio-container">
+            <div class="portfolio-row header-wrap">
+                <a href="#" class="logo">Johnson</a>
+                <div class="portfolio-navbar">
+                    <div class="navbar-widget">
+                        <a href="#" class="logo">Johnson</a>
+                        <button class="navbar-toggle" type="button" onclick="navbarToggle();">
+                            <i class='bx bx-x-circle'></i>
+                        </button>
+                    </div>
+                    <ul>
+
+                    </ul>
+                </div>
+                <button class="theme-toggle" type="button" onclick="themeToggle();">
+                    <i class='bx bx-sun'></i>
+                    <i class='bx bx-moon'></i>
+                </button>
+                <button class="navbar-toggle" type="button" onclick="navbarToggle();">
+                    <i class='bx bx-grid-alt'></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <section id="about">
+
+    </section>
+    <section id="services">
+
+    </section>
+    <section id="resume">
+        <div class="portfolio-container">
+            <span>Resume</span>
+            <h3>
+                Curriculum Vitae
+            </h3>
+            <div class="portfolio-row">
+                <div class="resume-body">
+                    <!-- Resume Heading Begins -->
+                    <input type="radio" name="tabs" id="tab1" checked>
+                    <label for="tab1">Work Experience</label>
+                    <input type="radio" name="tabs" id="tab2">
+                    <label for="tab2">Education</label>
+                    <!-- Resume Heading Ends -->
+
+                    <!-- Experience Tab Begins -->
+                    <div class="resume-tab experience-tab" id="experience">
+                        <div class="tab-content">
+                            <h4 class="role">Full Stack Developer</h4>
+                            <h6 class="organization">Pixel Studios</h6>
+                            <span class="years">2018-2020</span>
+                        </div>
+                        <div class="tab-content">
+                            <h4 class="role">Web Developer / Full Stack Developer</h4>
+                            <h6 class="organization">ByteBloom Tech</h6>
+                            <span class="years">2016-2017</span>
+                        </div>
+                        <div class="tab-content">
+                            <h4 class="role">UI/UX Designer / Web Developer</h4>
+                            <h6 class="organization">ByteBloom Tech</h6>
+                            <span class="years">2016-2017</span>
+                        </div>
+                        <div class="tab-content">
+                            <h4 class="role">UI/UX Designer</h4>
+                            <h6 class="organization">Infinity Labs</h6>
+                            <span class="years">2014-2016</span>
+                        </div>
+                    </div>
+                    <!-- Experience Tab Ends -->
+
+                    <!-- Education Tab Begins -->
+                    <div class="resume-tab education-tab" id="education">
+                        <div class="tab-content">
+                            <h4 class="course">Master of Design</h4>
+                            <h6 class="institution">IIT Hyderabad</h6>
+                            <span class="years">2019-2021</span>
+                        </div>
+                        <div class="tab-content">
+                            <h4 class="course">BCA in Web Application Development</h4>
+                            <h6 class="institution">The NorthCap University</h6>
+                            <span class="years">2013-2016</span>
+                        </div>
+                        <div class="tab-content">
+                            <h4 class="course">BCA in Web Application Development
+                            </h4>
+                            <h6 class="institution">The NorthCap University</h6>
+                            <span class="years">2013-2016</span>
+                        </div>
+                        <div class="tab-content">
+                            <h4 class="course">Diploma in Web Designing</h4>
+                            <h6 class="institution">Bangalore University</h6>
+                            <span class="years">2010-2012
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="portfolio-container">
+            <h3>
+                What’s Been Brewing
+                <span>
+                    Recently
+                </span>
+            </h3>
+            <p>
+                Blending creativity, code & recent breakthroughs
+            </p>
+            <div class="portfolio-row filter-wrap">
+                <div class="portfolio-filter-nav">
+                    <button class="btn active" type="button" data-id="all">
+                        Show All
+                    </button>
+                    <button class="btn" type="button" data-id="design">
+                        Design
+                    </button>
+                    <button class="btn" type="button" data-id="development">
+                        Development
+                    </button>
+                </div>
+            </div>
+            <div class="portfolio-wrapper">
+                <div class="portfolio-col">
+                    <div class="portfolio-item design">
+                        <img src="image/portfolio-one.jpg" alt="">
+                        <div class="portfolio-item-content">
+                            <div class="product-title">
+                                <h4>UXAlchemy</h4>
+                                <p>Designing Visual Narratives</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item development">
+                        <img src="image/portfolio-two.jpg" alt="">
+                        <div class="portfolio-item-content">
+                            <div class="product-title">
+                                <h4>PixelCraft</h4>
+                                <p>Building Masterpieces</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-col">
+                    <div class="portfolio-item development">
+                        <img src="image/portfolio-three.jpg" alt="">
+                        <div class="portfolio-item-content">
+                            <div class="product-title">
+                                <h4>CodeMosaic</h4>
+                                <p>Digital Transformation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item design">
+                        <img src="image/portfolio-four.jpg" alt="">
+                        <div class="portfolio-item-content">
+                            <div class="product-title">
+                                <h4>WebWhisperer</h4>
+                                <p>User Experiences</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-col">
+                    <div class="portfolio-item development">
+                        <img src="image/portfolio-five.jpg" alt="">
+                        <div class="portfolio-item-content">
+                            <div class="product-title">
+                                <h4>DevEasel</h4>
+                                <p>Artistry in Development
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item design">
+                        <img src="image/portfolio-six.jpg" alt="">
+                        <div class="portfolio-item-content">
+                            <div class="product-title">
+                                <h4>Apexon</h4>
+                                <p>The Future of UX</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="portfolio-container">
+            <h3>
+                Let’s Start a
+                <span>
+                    Conversation
+                </span>
+            </h3>
+            <p>
+                Reach out & let’s build something amazing.
+            </p>
+            <div class="portfolio-row">
+                <div class="contact-info">
+                    <span class="subtitle">
+                        Connect With Me
+                    </span>
+                    <ul>
+                        <li class="contact-item">
+                            <h5>Phone</h5>
+                            <span>+1 (359) 936-8944</span>
+                        </li>
+                        <li class="contact-item">
+                            <h5>Email</h5>
+                            <span>david@example.com</span>
+                        </li>
+                        <li class="contact-item">
+                            <h5>Address</h5>
+                            <span>7462 Mitchell Plaza, Kirstieshire</span>
+                        </li>
+                    </ul>
+                    <span class="subtitle">
+                        Find Me on Socials
+                    </span>
+                    <ul class="social-content">
+                        <li class="social-item">
+                            <a href="#">
+                                <i class='bx bxl-instagram'></i>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="#">
+                                <i class='bx bxl-github'></i>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="#">
+                                <i class='bx bxl-facebook'></i>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="#">
+                                <i class='bx bxl-linkedin'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <span class="subtitle">
+                        I'm Just a Message Away
+                    </span>
+                    <form action="#" method="POST" id="contact-form">
+                        <div class="portfolio-row">
+                            <div class="input-wrapper">
+                                <label for="name">Full Name <span>*</span></label>
+                                <input type="text" name="name" placeholder="Enter Your Name" class="input-control">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="email">Email <span>*</span></label>
+                                <input type="email" name="email" placeholder="Enter Your Email" class="input-control">
+                            </div>
+                            <div class="input-subject">
+                                <label for="subject">Message <span>*</span></label>
+                                <textarea name="message" rows="9" placeholder="Your Message"
+                                    class="contact-msg"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-submit">
+                            <button type="submit" class="btn-submit">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="portfolio-container">
+            <div class="portfolio-row footer-wrap">
+                <div class="copyright-text">
+                    <p>
+                        © Copyright 2025 by <strong>CodzSword</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 
